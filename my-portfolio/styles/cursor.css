@@ -1,0 +1,35 @@
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s ease, height 0.25s ease, background 0.25s ease;
+}
+
+.cursor-hover {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.cursor-click {
+  animation: clickPulse 0.35s ease;
+}
+
+/* Ripple click animation */
+@keyframes clickPulse {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2.5);
+  }
+}

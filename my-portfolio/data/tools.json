@@ -1,0 +1,7 @@
+[
+  { "name": "VS Code", "icon": "/images/tools/vscode.png" },
+  { "name": "Figma", "icon": "/images/tools/figma.png" },
+  { "name": "Git", "icon": "/images/tools/git.png" },
+  { "name": "Postman", "icon": "/images/tools/postman.png" },
+  { "name": "Docker", "icon": "/images/tools/docker.png" }
+]
