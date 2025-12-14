@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../styles/cursor.css";
+@import "../styles/animations.css";
+
+/* Smooth rendering */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0b0f;
+  color: #ffffff;
+  overflow-x: hidden;
+  font-family: var(--font-geist-sans);
+}
+
+/* Hide native cursor — replaced by custom cursor */
+* {
+  cursor: none;
+}
+
+/* Premium section spacing */
+.section {
+  @apply py-24 md:py-32;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c2c37;
+  border-radius: 8px;
+}

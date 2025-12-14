@@ -1,0 +1,10 @@
+[
+  { "name": "JavaScript", "icon": "/images/skills/js.png" },
+  { "name": "TypeScript", "icon": "/images/skills/ts.png" },
+  { "name": "React", "icon": "/images/skills/react.png" },
+  { "name": "Next.js", "icon": "/images/skills/next.png" },
+  { "name": "Tailwind", "icon": "/images/skills/tailwind.png" },
+  { "name": "Node.js", "icon": "/images/skills/node.png" },
+  { "name": "GSAP", "icon": "/images/skills/gsap.png" },
+  { "name": "Framer Motion", "icon": "/images/skills/framer.png" }
+]
