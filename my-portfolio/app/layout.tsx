@@ -2,20 +2,17 @@ import "./globals.css";
 import type { ReactNode } from "react";
 import { Inter, JetBrains_Mono } from "next/font/google";
 
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import DockNavbar from "@/components/layout/DockNavbar";
 import Cursor from "@/components/layout/Cursor";
-import Providers from "@/components/providers/Providers";
-import TransitionLayout from "@/components/providers/TransitionLayout";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-geist-sans"
+  variable: "--font-sans"
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const mono = JetBrains_Mono({
   subsets: ["latin"],
-  variable: "--font-geist-mono"
+  variable: "--font-mono"
 });
 
 export default function RootLayout({
@@ -24,19 +21,11 @@ export default function RootLayout({
   children: ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${jetbrainsMono.variable}`}
-    >
+    <html lang="en" className={`${inter.variable} ${mono.variable}`}>
       <body>
-        <Providers>
-          <Navbar />
-          <TransitionLayout>
-            {children}
-            <Footer />
-          </TransitionLayout>
-          <Cursor />
-        </Providers>
+        {children}
+        <DockNavbar />
+        <Cursor />
       </body>
     </html>
   );

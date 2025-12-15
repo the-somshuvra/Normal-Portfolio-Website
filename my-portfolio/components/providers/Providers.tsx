@@ -1,12 +1,11 @@
 "use client";
 
 import { ReactNode } from "react";
-import { AnimatePresence } from "framer-motion";
 
 export default function Providers({
   children
 }: {
   children: ReactNode;
 }) {
-  return <AnimatePresence>{children}</AnimatePresence>;
+  return <>{children}</>;
 }
