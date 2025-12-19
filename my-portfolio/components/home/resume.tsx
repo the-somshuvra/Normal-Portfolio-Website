@@ -31,7 +31,7 @@ export default function ResumePage() {
 
         <MagneticWrapper>
           <a
-            href="\public\resume\Somshuvra _Ghosh_Resume.pdf"
+            href="/resume/Somshuvra_Ghosh_Resume.pdf"  
             target="_blank"
             rel="noopener noreferrer"
             data-hover

@@ -3,6 +3,7 @@ import About from "@/components/home/About";
 import Skills from "@/components/home/Skills";
 import Tools from "@/components/home/Tools";
 import Projects from "@/components/home/Projects";
+import ResumePage from "@/components/home/resume";
 import Contact from "@/components/home/Contact";
 import FloatingShapes from "@/components/home/FloatingShapes";
 
@@ -29,6 +30,10 @@ export default function HomePage() {
 
       <section id="projects" className="section">
         <Projects />
+      </section>
+
+      <section id="resume" className="section">
+        <ResumePage />
       </section>
 
       <section id="contact" className="section">

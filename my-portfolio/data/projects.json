@@ -1,26 +1,14 @@
 [
   {
-    "title": "Premium Portfolio Website",
-    "description": "A high-end portfolio with 3D interactions, smooth animations, and a premium visual identity.",
-    "image": "/images/projects/portfolio.png",
-    "tech": ["Next.js", "React", "Three.js", "Framer Motion"],
-    "demo": "https://your-demo-link.com",
-    "github": "https://github.com/your-profile/portfolio"
+    "id": 1,
+    "title": "RakshaAI",
+    "description": "AI-powered multilingual healthcare chatbot for rural India.",
+    "tech": ["Next.js", "TypeScript", "AI4Bharat", "Node.js"]
   },
   {
-    "title": "AI Chat Application",
-    "description": "Full-stack realtime AI chat app using OpenAI APIs with typing effects and conversation persistence.",
-    "image": "/images/projects/ai-chat.png",
-    "tech": ["Next.js", "Node.js", "Tailwind"],
-    "demo": "https://your-demo-link.com",
-    "github": "https://github.com/your-profile/ai-chat"
-  },
-  {
-    "title": "E-Commerce Dashboard",
-    "description": "Admin dashboard with charts, analytics, order tracking, and inventory system.",
-    "image": "/images/projects/dashboard.png",
-    "tech": ["React", "Recharts", "Firebase"],
-    "demo": "https://your-demo-link.com",
-    "github": "https://github.com/your-profile/ecommerce-dashboard"
+    "id": 2,
+    "title": "Portfolio Website",
+    "description": "Premium animated personal portfolio with custom interactions.",
+    "tech": ["Next.js", "Tailwind CSS", "Framer Motion"]
   }
 ]
