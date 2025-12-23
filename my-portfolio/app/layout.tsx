@@ -7,6 +7,7 @@ import ScrollProgress from "@/components/layout/ScrollProgress";
 import Cursor from "@/components/layout/Cursor";
 import ParallaxBackground from "@/components/layout/ParallaxBackground";
 import SectionBackground from "@/components/layout/SectionBackground";
+import MagneticLogo from "@/components/layout/MagneticLogo";
 
 
 const inter = Inter({
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${mono.variable}`}>
       <body>
-
+        <MagneticLogo />
         <SectionBackground />
         <ScrollProgress />
         <ParallaxBackground />
