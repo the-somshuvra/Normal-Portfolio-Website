@@ -5,7 +5,7 @@ import Image from "next/image";
 import GradientText from "../shared/GradientText";
 import Spotlight from "../shared/Spotlight";
 import MagneticWrapper from "../shared/MagneticWrapper";
-import { MapPin } from "lucide-react";
+import { MapPin, Sparkles, Languages, Briefcase, Code, Telescope  } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative w-full min-h-[90vh] flex items-center">
@@ -145,6 +145,28 @@ export default function Hero() {
                   />
                 </div>
 
+                {/* ================= FLOATING INFO CARDS ================= */}
+
+                {/* Top Left */}
+                <FloatingCard
+                  className="top-11 -left-20"
+                  icon={<Telescope  size={25} />}
+                  title="Explorer"
+                />
+
+                {/* Top Right */}
+                <FloatingCard
+                  className="-top-4 -right-9"
+                  icon={<Code size={20} />}
+                  title="MERN Stack Developer"
+                />
+
+                {/* Bottom */}
+                <FloatingCard
+                  className="-bottom-4 left-1/2 -translate-x-1/2"
+                  icon={<Briefcase size={20} />}
+                  title="Open to Opportunities"
+                />
               </div>
             </MagneticWrapper>
 
@@ -152,5 +174,34 @@ export default function Hero() {
         </div>
       </div>
     </section>
+  );
+}
+/* ================= FLOATING CARD COMPONENT ================= */
+function FloatingCard({
+  icon,
+  title,
+  className,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  className?: string;
+}) {
+  return (
+    /*<MagneticWrapper strength={0.25}>*/
+      <motion.div
+        className={`absolute ${className}
+        z-30
+          flex items-center gap-2 px-4 py-2
+          rounded-full bg-black/60 backdrop-blur-md
+          border border-white/10 text-white/90
+          text-sm shadow-lg cursor-pointer`}
+        animate={{ y: [0, -6, 0] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        whileHover={{ scale: 1.08 }}
+      >
+        <span className="text-emerald-400">{icon}</span>
+        <span>{title}</span>
+      </motion.div>
+    /*== </MagneticWrapper> ==*/
   );
 }
